@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
+    <link href="./styles/style.css" rel="stylesheet" />
     <meta charset="UTF-8" />
     <meta name="description" content="IT school from Belarus" />
     <meta name="keywords" content="HTML, CSS, JavaScript" />
@@ -9,164 +10,74 @@
     <title>Homework</title>
   </head>
   <body>
-    <img
-      src="https://oir.mobi/uploads/posts/2021-02/1612280680_40-p-anime-v-realnoi-zhizni-art-kartinki-45.jpg"
-      alt="girl on a picnic"
-    />
-    <hr />
-
-    <ol>
-      <li>
-        Знакомство с Web
-        <ul>
-          <li>Краткая история Web и что такое интернет.</li>
-          <li>Как устроен браузер и как он получает страницы по сети.</li>
-          <li>Что такое Git?</li>
-          <li>Создание первого репозитория.</li>
-          <li>о файле .gitignore</li>
-        </ul>
-      </li>
-      <li>
-        HTML-вёрстка&#8212;первые шаги
-        <ul>
-          <li>Настройка рабочей среды.</li>
-          <li>Краткая история HTML.</li>
-          <li>Какие бывают теги и что такое атрибут.</li>
-          <li>Тэги для работы с текстом.</li>
-          <li>Создание собственной страницы.</li>
-        </ul>
-      </li>
-      <li>
-        Погружение в HTML-разметку
-        <ul>
-          <li>Мета-теги.</li>
-          <li>Мнемоника.</li>
-          <li>Тег для работы с изображениями.</li>
-          <li>Теги для работы со списками.</li>
-          <li>Теги для работы с таблицами.</li>
-          <li>Теги для работы с формами.</li>
-          <li>Div-блоки.</li>
-        </ul>
-      </li>
-    </ol>
-    <hr />
-    <table border="1" width="30%">
-      <thead>
-        <tr>
-          <th>Tag</th>
-          <th>Description</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>&#60;table&#62;</td>
-          <td>Defines a table</td>
-        </tr>
-        <tr>
-          <td>&#60;tr&#62;</td>
-          <td>Defines a row in a table</td>
-        </tr>
-        <tr>
-          <td>&#60;th&#62;</td>
-          <td rowspan="2">Defines a "header cell"/"cell" in a table</td>
-        </tr>
-        <tr>
-          <td>&#60;td&#62;</td>
-        </tr>
-        <tr>
-          <td colspan="2">Rarely used</td>
-        </tr>
-        <tr>
-          <td>&#60;caption&#62;</td>
-          <td>Defines a table caption</td>
-        </tr>
-        <tr>
-          <td>&#60;thead&#62;</td>
-          <td>Groups the header content in a table</td>
-        </tr>
-        <tr>
-          <td>&#60;tbody&#62;</td>
-          <td>Groups the body content in a table</td>
-        </tr>
-        <tr>
-          <td>&#60;tfoot&#62;</td>
-          <td>Groups the footer content in a table</td>
-        </tr>
-      </tbody>
-    </table>
-    <hr />
-    <form action="/index.html" method="get">
-      <fieldset>
-        <legend>My first form</legend>
-        <p>
-          <label for="name">Name</label><br />
-          <input
-            type="text"
-            id="name"
-            name="Name"
-            placeholder="Name"
-            required
-          /><br />
-          <label for="email">Email</label><br />
-          <input type="email" id="email" name="Email" required /><br />
-          <label for="password">Password</label><br />
-          <input type="password" id="password" name="password" required /><br />
-        </p>
-        <p>
-          <label for="level">Your programming level</label><br />
-          <input type="range" id="level" name="level" min="0" max="10" />
-        </p>
-        <p>
-          What does HTML stand for?<br />
-          <input type="checkbox" id="hyperlinks" name="hyperlinks" value="a1" />
-          <label for="hyperlinks">Hyperlinks and Text Markup Language</label
-          ><br />
-          <input type="checkbox" id="home" name="home" value="a2" />
-          <label for="home">Home Tool Markup Language</label><br />
-          <input type="checkbox" id="hyper" name="hyper" value="a3" />
-          <label for="hyper">Hyper Text Markup Language</label>
-        </p>
-        <p>
-          What does HTTP stand for?<br />
-          <input type="radio" id="translate" name="http" value="translate" />
-          <label for="translate">Hyper Text Translate Protocol</label><br />
-          <input
-            type="radio"
-            id="transmission"
-            name="http"
-            value="transmission"
+    <!--lesson-4-->
+    <div class="container">
+      <h1>What do we offer</h1>
+      <hr />
+      <div class="features">
+        <div class="features_item">
+          <img class="features_icon" src="./img/micro.png" alt="headphones" />
+          <p class="features_title">Support 24/7</p>
+        </div>
+        <div class="features_item">
+          <img class="features_icon" src="./img/sms.png" alt="sms" />
+          <p class="features_title">Communicate directly</p>
+        </div>
+        <div class="features_item">
+          <img
+            class="features_icon"
+            id="lol"
+            src="./img/netbook.png"
+            alt="laptop"
           />
-          <label for="transmission">Hyper Text Transmission Protocol</label
-          ><br />
-          <input type="radio" id="transfer" name="http" value="transfer" />
-          <label for="transfer">Hyper Text Transfer Protocol</label>
-        </p>
-        <p>
-          <label for="comment">Comment:</label><br />
-          <textarea
-            id="comment"
-            name="story"
-            rows="5"
-            cols="33"
-            maxlength="500"
-          >Comment</textarea
-          >
-        </p>
-        <p>
-          What does HTML stand for?<br />
-          <label>
-            <select name="select">
-              <option value="value0" selected disabled>
-                Choose your answer
-              </option>
-              <option value="value1">Hypertext Markup Language</option>
-              <option value="value2">Hyper Markup Language</option>
-              <option value="value3">Hypermarket Language</option>
-            </select>
-          </label>
-        </p>
-        <button type="submit">Send</button>
-      </fieldset>
-    </form>
+          <p class="features_title">Book online</p>
+        </div>
+        <div class="features_item">
+          <img class="features_icon" src="./img/like.png" alt="like" />
+          <p class="features_title">Real guest reviews</p>
+        </div>
+      </div>
+    </div>
+    <!--lesson-5-->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer_inner">
+          <div class="footer_block">
+            <h2 class="footer_title">About</h2>
+            <div class="footer_text">
+              <p>How Triphouse works</p>
+              <p>Careers</p>
+              <p>Privacy</p>
+              <p>Terms</p>
+            </div>
+          </div>
+          <div class="footer_block">
+            <h3 class="footer_title">Property types</h3>
+            <div class="footer_text">
+              <p>Guest houses</p>
+              <p>Hotels</p>
+              <p>Apartments</p>
+              <p>Villas</p>
+              <p>Holiday homes</p>
+              <p>Hostels</p>
+            </div>
+          </div>
+          <div class="footer_block">
+            <h3 class="footer_title">Support</h3>
+            <div class="footer_text">
+              <p>Contact Customer Service</p>
+              <p>FAQ</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <div class="container">
+          <div class="copyright_text">
+            &#169; 2020 Triphouse, Inc. All rights reserved
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
