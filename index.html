@@ -10,29 +10,67 @@
     <title>Homework</title>
   </head>
   <body>
-    <h1>What do we offer</h1>
-    <hr />
-    <div class="container">
-      <div class="about">
-        <div class="about_img">
-          <img src="./img/micro.png" alt="headphones" />
-        </div>
-        <div class="about_img">
-          <img src="./img/sms.png" alt="sms" />
-        </div>
-        <div class="about_img">
-          <img src="./img/netbook.png" alt="netbook" />
-        </div>
-        <div class="about_img">
-          <img src="./img/like.png" alt="like" />
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <div class="header__logo">
+            <img src="img/logo_vector.svg" alt="TripHouse" />
+          </div>
+          <nav class="nav">
+            <a class="nav__links" href="#">Stays</a>
+            <a class="nav__links" href="#">Attractions</a>
+            <a class="nav__links" href="#">
+              <img src="img/night.png" alt="moon" />
+            </a>
+            <a class="nav__links" href="#">
+              <img src="img/AccountCircle.png" alt="account" />
+            </a>
+          </nav>
         </div>
       </div>
-    </div>
-    <div class="text">
-      <div class="text_item">Support 24/7</div>
-      <div class="text_item">Communicate directly</div>
-      <div class="text_item">Book online</div>
-      <div class="text_item">Real guest reviews</div>
-    </div>
+      <div class="intro">
+        <div class="container">
+          <div class="intro__inner">
+            <h1 class="intro__title">
+              Discover stays <br />
+              to live, work or just relax
+            </h1>
+          </div>
+          <form class="menu">
+            <div class="menu__wrapper menu__wrapper--search">
+              <label class="menu__text"> Your destination or hotel </label>
+              <input class="menu__item" list="brow" placeholder="New York"/>
+              <datalist id="brow">
+                <option value="New York"></option>
+                <option value="Los Angeles"></option>
+                <option value="Chicago"></option>
+                <option value="Houston"></option>
+                <option value="Philadelphia"></option>
+              </datalist>
+            </div>
+            <div class="menu__wrapper menu__wrapper--check">
+              <label class="menu__text"> Check-in — Check-out </label>
+              <input class="menu__item" type="date" />
+            </div>
+            <input class="menu__item menu__item--people" type="text" />
+            <button class="menu__item menu__item--button" type="submit">
+              Search
+            </button>
+          </form>
+          <footer class="footer">
+            <div class="container">
+              <div class="social">
+                <a class="social__item" href="#">
+                  <img src="img/playmarket.svg" alt="google play" />
+                </a>
+                <a class="social__item" href="#">
+                  <img src="img/appstore.svg" alt="apple store" />
+                </a>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </header>
   </body>
 </html>
