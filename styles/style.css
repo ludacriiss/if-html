@@ -5,7 +5,7 @@
 h1 {
   text-align: center;
   margin-top: 120px;
-  font-family: roboto;
+  font-family: "Roboto";
   color: #383838;
 }
 hr {
@@ -23,7 +23,7 @@ hr {
   text-align: center;
   padding: 0 65px;
   margin: 25px 0;
-  font-family: roboto;
+  font-family: "Roboto";
   line-height: 28px;
 }
 .features_icon {
@@ -36,12 +36,11 @@ hr {
 #lol {
   margin-bottom: 67px;
 }
-
 @font-face {
-  font-family: roboto;
-  src: url("../fonts/roboto/Roboto-Light.ttf") format("truetype");
+  font-family: "Roboto";
+  src: url("../fonts/roboto/roboto-regular.woff2") format("woff2");
+  font-weight: 400;
   font-style: normal;
-  font-weight: normal;
 }
 .footer {
   background-color: #10367c;
@@ -49,7 +48,7 @@ hr {
 .footer_inner {
   display: flex;
   flex-wrap: wrap;
-    padding: 75px;
+  padding: 75px;
 }
 .footer_block {
   width: 33.33333%;
@@ -62,28 +61,28 @@ hr {
 }
 .footer_text {
   font-size: 20px;
-  font-weight: normal;
+  font-weight: 400;
   color: #ffffff;
   font-style: normal;
   line-height: 23px;
-    font-family: roboto;
+  font-family: "Roboto";
 }
-.copyright{
-    padding: 30px 0;
+.copyright {
+  padding: 30px 0;
 }
-.copyright_text{
-    text-align: left;
-    font-size: 14px;
-    line-height: 16px;
-    color:#ffffff;
-    margin-left: 70px;
-    font-family: roboto;
+.copyright_text {
+  text-align: left;
+  font-size: 14px;
+  line-height: 3em;
+  color: #ffffff;
+  margin-left: 70px;
+  font-family: "Roboto";
 }
-ul{
+ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-li{
-  line-height: 40px;
+li {
+  line-height: 2.52em;
 }
