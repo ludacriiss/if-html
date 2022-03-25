@@ -10,81 +10,88 @@
     <title>Homework</title>
   </head>
   <body>
-    <svg display="none">
-      <symbol id="account" viewBox="0 0 40 40">
-        <g>
-          <path
-            d="M20 0C8.96 0 0 8.96 0 20C0 31.04 8.96 40 20 40C31.04 40 40 31.04 40 20C40 8.96 31.04 0 20 0ZM20 6C23.32 6 26 8.68 26 12C26 15.32 23.32 18 20 18C16.68 18 14 15.32 14 12C14 8.68 16.68 6 20 6ZM20 34.4C15 34.4 10.58 31.84 8 27.96C8.06 23.98 16 21.8 20 21.8C23.98 21.8 31.94 23.98 32 27.96C29.42 31.84 25 34.4 20 34.4Z"
-            fill="white"
-          />
-        </g>
-      </symbol>
-    </svg>
-    <section class="header">
+    <section class="features">
       <div class="container">
-        <div class="header__inner">
-          <div class="header__logo">
-            <img src="img/logo_vector.svg" alt="TripHouse" />
+        <h2 class="features__title">What do we offer</h2>
+        <hr class="features__line" />
+        <div class="features__list">
+          <div class="features_item">
+            <svg class="features_icon">
+              <use xlink:href="./sprite.svg#headphones"></use>
+            </svg>
+            <h3 class="features__subtitle">Support 24/7</h3>
           </div>
-          <nav class="nav">
-            <a class="nav__links" href="#">Stays</a>
-            <a class="nav__links" href="#">Attractions</a>
-            <a class="nav__links" href="#">
-              <img src="img/night.png" alt="moon" />
-            </a>
-            <a class="nav__links" href="#">
-              <svg class="svg__icon">
-                <use xlink:href="#account"></use>
-              </svg>
-            </a>
-          </nav>
-        </div>
-      </div>
-      <div class="intro">
-        <div class="container">
-          <div class="intro__inner">
-            <h1 class="intro__title">
-              Discover stays <br />
-              to live, work or just relax
-            </h1>
+          <div class="features_item">
+            <svg class="features_icon" preserveAspectRatio="xMidYMid meet">
+              <use xlink:href="./sprite.svg#mail" ></use>
+            </svg>
+            <h3 class="features__subtitle">Communicate directly</h3>
           </div>
-          <form class="menu">
-            <div class="menu__wrapper menu__wrapper--search">
-              <label class="menu__text" for="hotel">
-                Your destination or hotel
-              </label>
-              <input class="menu__item" list="brow" id="hotel" />
-              <datalist id="brow">
-                <option value="New York"></option>
-                <option value="Los Angeles"></option>
-                <option value="Chicago"></option>
-                <option value="Houston"></option>
-                <option value="Philadelphia"></option>
-              </datalist>
-            </div>
-            <div class="menu__wrapper menu__wrapper--check">
-              <label class="menu__text" for="check">
-                Check-in — Check-out
-              </label>
-              <input class="menu__item" type="date" id="check" />
-            </div>
-            <input class="menu__item menu__item--people" type="text" />
-            <button class="menu__item menu__item--button" type="submit">
-              Search
-            </button>
-          </form>
-          <div class="container">
-            <div class="social">
-              <a class="social__item" href="#">
-                <img src="img/playmarket.svg" alt="google play" />
-              </a>
-              <a class="social__item" href="#">
-                <img src="img/appstore.svg" alt="apple store" />
-              </a>
-            </div>
+          <div class="features_item">
+            <svg class="features_icon">
+              <use xlink:href="./sprite.svg#computer"></use>
+            </svg>
+            <h3 class="features__subtitle">Book online</h3>
+          </div>
+          <div class="features_item">
+            <svg class="features_icon">
+              <use xlink:href="./sprite.svg#like"></use>
+            </svg>
+            <h3 class="features__subtitle">Real guest reviews</h3>
           </div>
         </div>
       </div>
     </section>
+    <footer class="footer">
+      <div class="footer__logo" >
+        <svg class="footer__icon">
+          <use xlink:href="./sprite.svg#logo"></use>
+        </svg>
+      </div>
+      <div class="container">
+        <div class="footer_inner">
+          <div class="footer_block">
+            <h3 class="footer_title">About</h3>
+            <div class="footer_text">
+              <ul class="footer__item-ul">
+                <li class="footer__item-li">How Triphouse works</li>
+                <li class="footer__item-li">Careers</li>
+                <li class="footer__item-li">Privacy</li>
+                <li class="footer__item-li">Terms</li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer_block">
+            <h3 class="footer_title">Property types</h3>
+            <div class="footer_text">
+              <ul class="footer__item-ul">
+                <li class="footer__item-li">Guest houses</li>
+                <li class="footer__item-li">Hotels</li>
+                <li class="footer__item-li">Apartments</li>
+                <li class="footer__item-li">Villas</li>
+                <li class="footer__item-li">Holiday homes</li>
+                <li class="footer__item-li">Hostels</li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer_block">
+            <h3 class="footer_title">Support</h3>
+            <div class="footer_text">
+              <ul class="footer__item-ul">
+                <li class="footer__item-li">Contact Customer Service</li>
+                <li class="footer__item-li">FAQ</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <div class="container">
+            <div class="copyright_text">
+              &#169; 2020 Triphouse, Inc. All rights reserved
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
