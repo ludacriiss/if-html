@@ -201,7 +201,9 @@ ul {
 .homes__svg{
   position: absolute;
   top: 50%;
-  right: -22%;
+  right: -1%;
+  width: 40px;
+  height: 40px;
 }
 .homes__title{
   text-align: center;
@@ -313,16 +315,11 @@ li:last-child{
     margin-right: auto;
     margin-bottom: 8px;
   }
-  .homes__item:nth-child(3){
+  .homes__item:nth-child(4){
     display: none
   }
   .homes__item:last-child{
     display: none;
-  }
-  .homes__svg {
-    position: absolute;
-    top: 52%;
-    right: -10%;
   }
   .footer{
     padding-top: 40px;
