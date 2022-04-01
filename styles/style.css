@@ -18,6 +18,7 @@
   width: 100%;
   max-width: 1232px;
   margin: 0 auto;
+  position: relative;
 }
 .container {
   max-width: 1440px;
@@ -43,12 +44,24 @@
   color: #fff;
   text-decoration: none;
   border-bottom: 4px solid transparent;
+  position: relative;
 }
+
 .nav__links:nth-child(3) {
   margin-left: 50px;
 }
-.nav__links:hover {
-  border-color: #f5bd41;
+.nav__links:after{
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 4px;
+  background-color: #f5bd41;
+  content: "";
+  transition: width 0.15s ease-out;
+}
+.nav__links:hover:after {
+  width: 100%;
 }
 ul {
   list-style-type: none;
@@ -149,7 +162,7 @@ ul {
   margin-bottom: 20px;
   font-size: 40px;
   line-height: 1.25;
-
+  position: relative;
 }
 .features__line {
   border: 0;
@@ -180,6 +193,49 @@ ul {
   font-weight: 400;
   line-height: 1.2;
 }
+/*start*/
+.homes{
+  padding: 120px 0;
+  background-color: #EAF0F9;
+}
+.homes__svg{
+  position: absolute;
+  top: 50%;
+  right: -1%;
+  width: 40px;
+  height: 40px;
+}
+.homes__title{
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  color: #383838;
+  margin-bottom: 100px;
+  font-size: 40px;
+  line-height: 1.25;
+}
+.homes__inner{
+  display: flex;
+  flex-wrap: wrap;
+}
+.homes__item{
+  width: 25%;
+}
+.homes__icon{
+  display: block;
+  margin-bottom: 24px;
+  max-width: 100%;
+  height: auto;
+}
+.homes__name{
+  font-size: 24px;
+  color: #3077C6;
+  margin-bottom: 24px;
+}
+.homes__location{
+  font-size: 24px;
+  color: #BFBFBF;
+}
+/*end*/
 .footer {
   background-color: #10367c;
   padding: 120px 104px;
@@ -236,7 +292,7 @@ ul {
 li:last-child{
   margin-bottom: 0;
 }
-@media (max-width: 1024px) {
+@media (max-width: 1256px) {
   .features__list{
     flex-wrap: wrap;
     gap: 100px 0;
@@ -245,6 +301,25 @@ li:last-child{
     margin: 0;
     flex-basis: 50%;
     padding: 0;
+  }
+  .homes__item{
+    width: 50%;
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  .homes__name{
+    margin-bottom: 8px;
+  }
+  .homes__icon{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 8px;
+  }
+  .homes__item:nth-child(4){
+    display: none
+  }
+  .homes__item:last-child{
+    display: none;
   }
   .footer{
     padding-top: 40px;
@@ -277,7 +352,7 @@ li:last-child{
     text-align: center;
   }
 }
-@media (max-width: 560px) {
+@media (max-width: 640px) {
   .features{
     margin-bottom: 40px;
   }
@@ -303,6 +378,23 @@ li:last-child{
   .features__subtitle{
     font-size: 15px;
   }
+  .homes{
+    padding: 40px 0;
+  }
+  .homes__title{
+    font-size: 28px;
+    margin-bottom: 32px;
+  }
+  .homes__icon{
+    width: 156px;
+    height: 155px;
+  }
+  .homes__name{
+    font-size: 12px;
+  }
+  .homes__location{
+    font-size: 12px;
+  }
   .footer{
     padding: 40px 5%;
   }
@@ -327,4 +419,5 @@ li:last-child{
     font-size: 12px;
     text-align: center;
   }
+
 }
