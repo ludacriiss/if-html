@@ -271,6 +271,23 @@ ul {
 .region__button--places--none{
   display: none;
 }
+.btn--book{
+  width: 128px;
+  height: 48px;
+  font-size: 18px;
+  color: #3077C6;
+  background-color: #ffffff;
+  border: 1px solid #3077C6;
+  border-radius: 8px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+.region__item:hover .btn--book{
+  display: block;
+}
 .region__title{
   text-align: center;
   font-family: "Roboto", sans-serif;
@@ -286,11 +303,15 @@ ul {
 }
 .region__item{
   width: 25%;
+  position: relative;
 }
 .region__icon{
   display: block;
   max-width: 100%;
   height: auto;
+}
+.region__icon:hover{
+ filter: brightness(0.60);
 }
 .region__name{
   font-size: 24px;
@@ -308,7 +329,7 @@ ul {
   position: absolute;
   width: 28px;
   height: 28px;
-  top: 70%;
+  top: 64%;
   right: 9%;
   display: none;
 }
@@ -324,7 +345,7 @@ ul {
 }
 .registration__close{
   position: absolute;
-  left: 98%;
+  left: 189%;
   top: -40%;
   z-index: 1;
   width: 26px;
@@ -357,6 +378,41 @@ ul {
   color: #fff;
   background-color:#3077C6 ;
 }
+.app{
+  display: none;
+  padding: 24px 49px;
+}
+.app__item{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.app__close{
+  width: 20px;
+  height: 20px;
+  margin-top: 20px;
+}
+.app__logo{
+  width: 58px;
+  height: 58px;
+  margin-left: 16px;
+}
+.app__url{
+  text-align: right;
+  text-decoration: none;
+  color: #3077C6;
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-left: 16px;
+}
+.app__text{
+  font-size: 12px;
+  font-weight: 400;
+  margin-top: 16px;
+  margin-left: 16px;
+}
+
 /*end*/
 .footer {
   background-color: #10367c;
@@ -499,8 +555,21 @@ li:last-child{
   .region__svg{
     display: none;
   }
+  .region__svg--second{
+    display: block;
+    width: 36px;
+    height: 36px;
+    top: 66%;
+    left: 92%;
+  }
   .section{
     display: none;
+  }
+  .app{
+    display: block;
+  }
+  .app__item{
+
   }
 }
 @media (max-width: 640px) {
@@ -620,7 +689,15 @@ li:last-child{
     margin-top: 8px;
 
   }
+  .btn--book {
+    width: 80px;
+    height: 30px;
+    font-size: 12px;
+  }
   .region__svg--second{
     display: block;
+    width: 20px;
+    height: 20px;
+    left: 86%;
   }
 }
