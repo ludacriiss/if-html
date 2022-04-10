@@ -455,12 +455,14 @@ ul {
 .reviews__icon--text{
   position: absolute;
   background: rgba(0, 0, 0, 0.5);
-  width: 100%;
+  width: 93.8%;
   top: 48%;
   left: 46%;
-  transform: translate(-46%, -68%);
+  transform: translate(-46%, -63%);
   color: #fff;
-  padding: 18px 0;
+  padding-left: 24px;
+  padding-top: 16px;
+  padding-bottom: 11px;
   text-align: left;
   font-size: 18px;
   font-weight: 500;
@@ -611,7 +613,7 @@ li:last-child{
     display: none;
   }
   .reviews__icon--text{
-    transform: translate(-46%, -60%);
+    transform: translate(-46%, -54%);
   }
 }
 @media (max-width: 1256px) {
@@ -682,7 +684,7 @@ li:last-child{
     padding: 0;
   }
   .app__item{
-    margin-bottom: 20px;
+    margin: 24px 0;
   }
   .reviews{
     padding: 100px 0;
@@ -860,7 +862,8 @@ li:last-child{
   }
   .reviews__svg--name{
     width: 39px;
-    height: 26px;
+    height: 20px;
+    padding-top: 5px;
   }
   .reviews__city{
     margin-left: 0;
