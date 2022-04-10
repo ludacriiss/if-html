@@ -607,7 +607,7 @@ li:last-child{
     max-width: 400px;
     width: 50%;
   }
-  .reviews__item:nth-child(4){
+  .reviews__item:nth-child(3){
     display: none;
   }
   .reviews__icon--text{
@@ -743,7 +743,7 @@ li:last-child{
   }
 }
 @media (max-width: 830px){
-  .reviews__item:nth-child(3){
+  .reviews__item:nth-child(2){
     display: none;
   }
   .reviews__icon--text {
@@ -768,6 +768,11 @@ li:last-child{
   }
   .reviews__text{
     margin-left: 0;
+  }
+  .rev__nav{
+    display: block;
+    position: absolute;
+    top: 102%;
   }
 }
 @media (max-width: 640px) {
