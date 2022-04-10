@@ -234,7 +234,6 @@ ul {
   font-size: 24px;
   color: #BFBFBF;
 }
-/*start*/
 .region{
   margin: 100px 0;
 }
@@ -412,7 +411,138 @@ ul {
   margin-top: 16px;
   margin-left: 16px;
 }
+/*start*/
+.reviews{
+  padding: 120px 104px;
+}
+.reviews__title{
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  color: #383838;
+  margin-bottom: 100px;
+  font-size: 40px;
+  line-height: 1.25;
+}
+.reviews__title--second{
+  display: none;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  color: #383838;
+  margin-bottom: 100px;
+  font-size: 40px;
+  line-height: 1.25;
+}
+.reviews__inner{
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+.reviews__arrow{
+  width: 33px;
+  height: 33px;
+  position: absolute;
+  z-index: 2;
+  top: 25%;
+  right: -1%;
+  transform: translate(-18%, -55%);
+}
+.reviews__item{
+  width: 32%;
+  background-color: #EAF0F9;
+  margin: 0 8px;
+  position: relative;
+}
+.reviews__icon--text{
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  width: 93.8%;
+  top: 48%;
+  left: 46%;
+  transform: translate(-46%, -63%);
+  color: #fff;
+  padding-left: 24px;
+  padding-top: 16px;
+  padding-bottom: 11px;
+  text-align: left;
+  font-size: 18px;
+  font-weight: 500;
+}
+.reviews__icon{
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 26px;
+}
+.reviews__svg--name{
+  padding-top: 10px;
+  width: 48px;
+  height: 28px;
+  background-color: #10367c;
+  color: #fff;
+  text-align: center;
+  border-radius: 8px;
+}
+.reviews__name{
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  color: #3077C6;
+  font-weight: 500;
+  margin: 16px 24px;
+}
+.reviews__city{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  color: #3077C6;
+  font-weight: 400;
+  margin: 17px 24px;
+}
+.reviews__color--grey{
+  color: #BFBFBF;
+  font-size: 14px;
+  font-weight: 400;
+}
+.reviews__color--grey-2{
+  color: #BFBFBF;
+  font-size: 18px;
+  font-weight: 400;
+}
+.reviews__user{
+  font-size: 18px;
+  color: #383838;
+  font-weight: 400;
+  margin-bottom: 24px;
 
+}
+.reviews__svg--user{
+  width: 53px;
+  height: 53px;
+  position: absolute;
+  z-index: 1;
+  margin-left: 29px;
+}
+.reviews__svg--flag{
+  width: 15px;
+  height: 10px;
+}
+.reviews__user p{
+  margin-left: 104px;
+  margin-bottom: 8px;
+}
+.reviews__text{
+  font-size: 18px;
+  color: #383838;
+  font-weight: 400;
+  line-height: 1.172em;
+  margin-right: 24px;
+  margin-left: 24px;
+  margin-bottom: 66px;
+}
+.rev__nav{
+  display: none;
+}
 /*end*/
 .footer {
   background-color: #10367c;
@@ -470,106 +600,181 @@ ul {
 li:last-child{
   margin-bottom: 0;
 }
+@media (max-width: 1440px){
+  .reviews__inner{
+    display: flex;
+    justify-content: center;
+  }
+  .reviews__item{
+    max-width: 400px;
+    width: 50%;
+  }
+  .reviews__item:nth-child(3){
+    display: none;
+  }
+  .reviews__icon--text{
+    transform: translate(-46%, -54%);
+  }
+}
 @media (max-width: 1256px) {
-  .features__list{
+  .features__list {
     flex-wrap: wrap;
     gap: 100px 0;
   }
-  .features_item{
+  .features_item {
     margin: 0;
     flex-basis: 50%;
     padding: 0;
   }
-  .homes__item{
+  .homes__item {
     width: 50%;
     text-align: center;
     padding-bottom: 30px;
   }
-  .homes__name{
+  .homes__name {
     margin-bottom: 8px;
   }
-  .homes__icon{
+  .homes__icon {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 8px;
   }
-  .homes__item:nth-child(4){
+  .homes__item:nth-child(4) {
     display: none
   }
-  .homes__item:last-child{
+  .homes__item:last-child {
     display: none;
   }
-  .footer{
-    padding-top: 40px;
-  }
-  .footer_inner{
-    gap: 32px;
-    justify-content: center;
-  }
-  .footer_block{
-    width: unset;
-  }
-  .footer__logo{
-    display: block;
-    text-align: center;
-    padding-bottom: 40px;
-  }
-  .footer__icon{
-    width: 150px;
-    height: 40px;
-  }
-  .footer_title{
-    text-decoration: underline;
-    text-decoration-thickness: 1px;
-    margin: 0;
-  }
-  .footer__item-li{
-    display: none;
-  }
-  .copyright_text{
-    text-align: center;
-  }
-  .region__inner{
+  .region__inner {
     margin-bottom: 100px;
   }
-  .region__item{
+  .region__item {
     width: 50%;
     text-align: center;
   }
-  .region__item:nth-child(3){
+  .region__item:nth-child(3) {
     display: none;
   }
-  .region__item:nth-child(4){
+  .region__item:nth-child(4) {
     display: none;
   }
-  .region__icon{
+  .region__icon {
+    margin: 0 auto 8px;
+  }
+  .region__button {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 8px;
   }
-  .region__button{
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 8px;
-  }
-  .region__svg{
+  .region__svg {
     display: none;
   }
-  .region__svg--second{
+  .region__svg--second {
     display: block;
     width: 36px;
     height: 36px;
     top: 66%;
     left: 92%;
   }
-  .section{
+  .section {
     display: none;
   }
-  .app{
+  .app {
     display: block;
+    padding: 0;
   }
   .app__item{
-
+    margin: 24px 0;
+  }
+  .reviews{
+    padding: 100px 0;
+    background-color: #EAF0F9;
+  }
+  .reviews__icon--text{
+    display: none;
+  }
+  .reviews__arrow{
+    top: 28%;
+    right: 0;
+    transform: translate(-7%, -53%);
+  }
+  .reviews__name{
+    margin: 10px 0;
+  }
+  .reviews__city{
+    margin: 20px 0;
+  }
+  .reviews__svg--user{
+    margin-left: 0;
+  }
+  .reviews__user p {
+    margin-left: 75px;
+  }
+  .reviews__text{
+    margin: 20px 0;
+  }
+  .footer {
+    padding-top: 40px;
+  }
+  .footer_inner {
+    gap: 32px;
+    justify-content: center;
+  }
+  .footer_block {
+    width: unset;
+  }
+  .footer__logo {
+    display: block;
+    text-align: center;
+    padding-bottom: 40px;
+  }
+  .footer__icon {
+    width: 150px;
+    height: 40px;
+  }
+  .footer_title {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    margin: 0;
+  }
+  .footer__item-li {
+    display: none;
+  }
+  .copyright_text {
+    text-align: center;
+  }
+}
+@media (max-width: 830px){
+  .reviews__item:nth-child(2){
+    display: none;
+  }
+  .reviews__icon--text {
+    display: none;
+  }
+  .reviews__nav{
+    display: block;
+    position: absolute;
+    top: 100%;
+  }
+  .reviews__arrow{
+    display: none;
+  }
+  .reviews__name{
+    margin: 16px 0;
+  }
+  .reviews__city{
+    margin: 17px 0;
+  }
+  .reviews__svg--user{
+    margin-left: 0;
+  }
+  .reviews__text{
+    margin-left: 0;
+  }
+  .rev__nav{
+    display: block;
+    position: absolute;
+    top: 102%;
   }
 }
 @media (max-width: 640px) {
@@ -620,6 +825,79 @@ li:last-child{
   }
   .homes__location{
     font-size: 12px;
+  }
+  .reviews{
+    padding: 50px 0;
+  }
+  .reviews__title--second{
+    display: block;
+  }
+  .reviews__item{
+    width: 100%;
+    padding: 0 8px;
+  }
+  .reviews__title{
+    display: none;
+  }
+  .reviews__title--second{
+    font-size: 28px;
+    margin-bottom: 32px;
+  }
+  .reviews__icon{
+    margin-bottom: 8px;
+  }
+  .reviews__icon--text {
+    transform: translate(-46%, -138%);
+  }
+  .reviews__arrow{
+    display: none;
+  }
+  .reviews__icon--text{
+    display: none;
+  }
+  .reviews__name{
+    font-size: 12px;
+    font-weight: 500;
+    margin: 8px 0;
+  }
+  .reviews__svg--name{
+    width: 39px;
+    height: 20px;
+    padding-top: 5px;
+  }
+  .reviews__city{
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 20px;
+    font-size: 15px;
+    font-weight: 400;
+  }
+  .reviews__color--grey{
+    font-size: 12px;
+  }
+  .reviews__svg--user{
+    width: 43px;
+    height: 43px;
+    margin: 0;
+  }
+  .reviews__user p {
+    margin-left: 78px;
+    font-size: 15px;
+  }
+  .reviews__color--grey-2{
+    font-size: 15px;
+  }
+  .reviews__text{
+    font-size: 15px;
+    font-weight: 500;
+    color: #383838;
+    line-height: 1.172em;
+    margin: 0;
+  }
+  .rev__nav{
+    display: block;
+    position: absolute;
+    top: 102%;
   }
   .footer{
     padding: 40px 5%;
@@ -699,5 +977,8 @@ li:last-child{
     width: 20px;
     height: 20px;
     left: 86%;
+  }
+  .app__item{
+    margin-bottom: 20px;
   }
 }
