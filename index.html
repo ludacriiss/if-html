@@ -14,7 +14,7 @@
       <div class="container">
         <div class="header__inner">
           <div class="header__logo">
-            <img src="img/logo_vector.svg" alt="TripHouse" />
+            <img class="header__icon" src="img/logo_vector.svg" alt="TripHouse" />
           </div>
           <nav class="nav">
             <a class="nav__links" href="#">Stays</a>
@@ -29,6 +29,9 @@
                 <use xlink:href="./sprite.svg#account"></use>
               </svg>
             </a>
+            <svg class="nav__links nav__svg--burger">
+              <use xlink:href="./sprite.svg#menu"></use>
+            </svg>
           </nav>
         </div>
       </div>
@@ -45,7 +48,7 @@
               <label class="menu__text" for="hotel">
                 Your destination or hotel
               </label>
-              <input class="menu__item" list="brow" id="hotel" />
+              <input class="menu__item" list="brow" id="hotel"/>
               <datalist id="brow">
                 <option value="New York"></option>
                 <option value="Los Angeles"></option>
@@ -60,7 +63,7 @@
               </label>
               <input class="menu__item" type="date" id="check" />
             </div>
-            <input class="menu__item menu__item--people" type="text" />
+            <input class="menu__item menu__item--people" type="text" placeholder="2 Adults — 0 Children — 1 Room" />
             <button class="menu__item menu__item--button" type="submit">
               Search
             </button>
